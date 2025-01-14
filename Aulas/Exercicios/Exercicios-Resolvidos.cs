@@ -90,15 +90,103 @@
 #endregion
 #region Aula3
 //Ciclo For
-Console.WriteLine("introduza o numero para tabuada");
-string numero = Console.ReadLine();
-int tabuada = int.Parse(numero);
+//Console.WriteLine("introduza o numero para tabuada");
+//string numero = Console.ReadLine();
+//int tabuada = int.Parse(numero);
 
-for (int i = 1; i <= 30; i++)
+//for (int i = 1; i <= 30; i++)
+//{
+//    Console.WriteLine($"{tabuada} x {i} = {tabuada * i}");
+//}
+
+
+//Exercicio 1
+
+//Console.Write("Introduza um numero: ");
+//int num = int.Parse(Console.ReadLine());
+
+//if (num % 2 == 0)
+//{
+//    Console.WriteLine("Numero Par");
+//}
+//else
+//{
+//    Console.WriteLine("Numero Impar");
+//}
+
+//Exercicio 2
+
+//Console.Write("Introduza a sua idade: ");
+//int idade = int.Parse(Console.ReadLine());
+
+
+//if (idade < 18) //Se a idade for menor que 18, exiba "Você é menor de idade."
+
+//{
+//    Console.WriteLine("Você é menor de idade.");
+//}
+//else if (idade >= 18 && idade <= 65) //Se a idade estiver entre 18 e 65, exiba "Você é adulto."
+
+//{
+//    Console.WriteLine("Você é adulto.");
+//}
+//else //Se a idade for maior que 65, exiba "Você é idoso."
+//{
+//    Console.WriteLine("Você é idoso.");
+//}
+
+//Exercicio 3
+
+//Console.WriteLine("1 - Verificar saldo");
+//Console.WriteLine("2 - Depositar dinheiro");
+//Console.WriteLine("3 - Retirar dinheiro");
+
+//Console.WriteLine("Escolha uma das opções:");
+
+//int escolha = int.Parse(Console.ReadLine());
+
+//switch(escolha)
+//{
+//    case 1:
+//        Console.WriteLine("Escolheu verificar saldo!");
+//        break;
+//        case 2: 
+//            Console.WriteLine("Escolheu Depositar dinheiro!");
+//        break;
+//        case 3: 
+//            Console.WriteLine("Escolheu retirar dinheiro!");
+//        break;
+//        default: 
+//            Console.WriteLine("Opção inválida");
+//        break;
+//}
+
+//Exercicio 4
+
+//Console.WriteLine("Introduza o numero inteiro positivo: ");
+//int tabuada = int.Parse(Console.ReadLine());
+
+//Console.WriteLine($"Tabuada de {tabuada} é:");
+
+//for (int i = 1; i <= 10; i++)
+//{
+//    Console.WriteLine($"{tabuada} x {i} = {tabuada * i}");
+//}
+
+//Exercicio 5
+
+Console.WriteLine("Introduza um numero ou 0 para terminar o programa.");
+int numero = -1;
+int soma = 0;
+
+while (numero != 0)
 {
-    Console.WriteLine($"{tabuada} x {i} = {tabuada * i}");
+    Console.Write("Digite um número: ");
+    numero = int.Parse(Console.ReadLine());
+    soma += numero;
+    //debug
+    //Console.WriteLine($"Variavel numero:{numero}");
+    //Console.WriteLine($"Variavel soma:{soma}");
 }
-
-
-
+Console.WriteLine($"Soma de todos os numeros:{soma}");
 #endregion
